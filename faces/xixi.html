@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xixi Is So Cool!</title>
+    <script src="../app.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.etsystatic.com%2F7247095%2Fr%2Fil%2F732ac0%2F4008823459%2Fil_794xN.4008823459_6lec.jpg&f=1&nofb=1&ipt=a7855da5e9f56a74d9438b9258c8e5245d81f7d4e97610adcc6e8fe96de1b1bf&ipo=images') repeat center center fixed; 
+            filter: blur(5px);
+            z-index: -1;
+        }
+    </style>
+  </head>
+  <body onload="startQuestions('Xixi')">
+    <header class="center">
+        <h1>Hello Xixi!</h1>
+        <h2>These questions are specially designed so that only <em>you</em> will be able to answer all of them. If you aren't Xixi, don't even try!</h2>
+    </header>
+    <button onclick="window.history.back()">Go Back</button>
+    <div id="questionContainer"></div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ashley Is So Cool!</title>
+    <script src="../app.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi5.walmartimages.com%2Fasr%2F19ced183-9099-46a0-9806-9832fd6b1327.64c57204e50449a12bed0c44064ef02b.jpeg&f=1&nofb=1&ipt=6fa194d0719f0c6e89ab846dbbc02af7325c885bdfa76f91c0265a2cec4be019&ipo=images') repeat center center fixed; 
+            filter: blur(5px);
+            z-index: -1;
+        }
+    </style>
+  </head>
+  <body onload="startQuestions('Ashley')">
+    <header class="center">
+        <h1>Hello Ashley!</h1>
+        <h2>These questions are specially designed so that only <em>you</em> will be able to answer all of them. If you aren't Ashley, don't even try!</h2>
+    </header>
+    <button onclick="window.history.back()">Go Back</button>
+    <div id="questionContainer"></div>
+  </body>
+</html>

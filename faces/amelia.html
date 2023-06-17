@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amelia Is So Cool!</title>
+    <script src="../app.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2016%2F01%2F14%2F18%2F30%2Fgrey-parrot-1140551_960_720.jpg&f=1&nofb=1&ipt=567b7f5a9948e55e8220c3a49930440b932098c7e906035fb2f733f24cbd5c90&ipo=images') repeat center center fixed; 
+            filter: blur(5px);
+            z-index: -1;
+        }
+    </style>
+  </head>
+  <body onload="startQuestions('Amelia')">
+    <header class="center">
+        <h1>Hello Amelia!</h1>
+        <h2>These questions are specially designed so that only <em>you</em> will be able to answer all of them. If you aren't Amelia, don't even try!</h2>
+    </header>
+    <button onclick="window.history.back()">Go Back</button>
+    <div id="questionContainer"></div>
+  </body>
+</html>

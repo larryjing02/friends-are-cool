@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Benjamin Is So Cool!</title>
+    <script src="../app.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftechnofaq.org%2Fwp-content%2Fuploads%2F2017%2F07%2Fcompsci.jpg&f=1&nofb=1&ipt=12cf548a9af4c1df9936a2f1507cddbc7f097fc58856db5612c585c2e2b6a8b8&ipo=images') repeat center center fixed; 
+            filter: blur(5px);
+            z-index: -1;
+        }
+    </style>
+  </head>
+  <body onload="startQuestions('Benjamin')">
+    <header class="center">
+        <h1>Hello Benjamin!</h1>
+        <h2>These questions are specially designed so that only <em>you</em> will be able to answer all of them. If you aren't Benjamin, don't even try!</h2>
+    </header>
+    <button onclick="window.history.back()">Go Back</button>
+    <div id="questionContainer"></div>
+  </body>
+</html>

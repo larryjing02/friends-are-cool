@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Michelle Is So Cool!</title>
+    <script src="../app.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffastly.4sqi.net%2Fimg%2Fgeneral%2F600x600%2F11285760_dKNeXYQBtu9AWw1WMR78RePLaU-ulSffs2a0O5tnXX4.jpg&f=1&nofb=1&ipt=f7652aa7202043d08918befaa4456e418af06edf58a59e3ec2d4a6c4d1b137c7&ipo=images') repeat center center fixed; 
+            filter: blur(5px);
+            z-index: -1;
+        }
+    </style>
+  </head>
+  <body onload="startQuestions('Michelle')">
+    <header class="center">
+        <h1>Hello Michelle!</h1>
+        <h2>These questions are specially designed so that only <em>you</em> will be able to answer all of them. If you aren't Michelle, don't even try!</h2>
+    </header>
+    <button onclick="window.history.back()">Go Back</button>
+    <div id="questionContainer"></div>
+  </body>
+</html>
